@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.itheima.cloud</groupId>
+  <artifactId>cloudserver</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+  <name>云服务器</name>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <spring-boot-version>2.4.2</spring-boot-version>
+    <spring-cloud-version>Hoxton.SR8</spring-cloud-version>
+    <spring-oauth2-version>2.1.3.RELEASE</spring-oauth2-version>
+    <mysql-version>8.0.22</mysql-version>
+    <com-alibaba-druid-version>1.1.10</com-alibaba-druid-version>
+    <com-alibaba-fastjson-version>1.2.74</com-alibaba-fastjson-version>
+    <lombok-version>1.18.16</lombok-version>
+    <spring-mybais-version>2.1.3</spring-mybais-version>
+    <spring-mybatis-plus-version>3.2.0</spring-mybatis-plus-version>
+  </properties>
+
+  <dependencyManagement>
+       <dependencies>
+         <!--导入spingboot依赖包-->
+         <dependency>
+           <groupId>org.springframework.boot</groupId>
+           <artifactId>spring-boot-dependencies</artifactId>
+           <version>${spring-boot-version}</version>
+           <type>pom</type>
+           <scope>import</scope>
+         </dependency>
+         <!--导入spingcloud依赖包-->
+         <dependency>
+           <groupId>org.springframework.cloud</groupId>
+           <artifactId>spring-cloud-dependencies</artifactId>
+           <version>${spring-cloud-version}</version>
+           <type>pom</type>
+           <scope>import</scope>
+         </dependency>
+         <!--导入oauth2依赖包-->
+         <dependency>
+           <groupId>org.springframework.security.oauth.boot</groupId>
+           <artifactId> spring-security-oauth2-autoconfigure</artifactId>
+           <version>${spring-oauth2-version}</version>
+         </dependency>
+         <!--mysql驱动-->
+         <dependency>
+           <groupId>mysql</groupId>
+           <artifactId>mysql-connector-java</artifactId>
+           <version>${mysql-version}</version>
+         </dependency>
+         <!--阿里巴巴 durid数据源-->
+         <dependency>
+           <groupId>com.alibaba</groupId>
+           <artifactId>druid-spring-boot-starter</artifactId>
+           <version>${com-alibaba-druid-version}</version>
+         </dependency>
+         <!--lombok自动生成setter getter-->
+         <dependency>
+           <groupId>org.projectlombok</groupId>
+           <artifactId>lombok</artifactId>
+           <version>${lombok-version}</version>
+         </dependency>
+         <!--阿里云fastjson转换工具-->
+         <dependency>
+           <groupId>com.alibaba</groupId>
+           <artifactId>fastjson</artifactId>
+           <version>${com-alibaba-fastjson-version}</version>
+         </dependency>
+         <!--mybais依赖包-->
+         <dependency>
+           <groupId>org.mybatis.spring.boot</groupId>
+           <artifactId>mybatis-spring-boot-starter</artifactId>
+           <version>${spring-mybais-version}</version>
+         </dependency>
+         <!--mybais-plus插件依赖包-->
+         <dependency>
+           <groupId>com.baomidou</groupId>
+           <artifactId>mybatis-plus-boot-starter</artifactId>
+           <version>${spring-mybatis-plus-version}</version>
+         </dependency>
+
+       </dependencies>
+  </dependencyManagement>
+  <modules>
+      <module>oauth</module>
+      <module>clientweb</module>
+      <module>common</module>
+     <module> clientweb2</module>
+  </modules>
+</project>
