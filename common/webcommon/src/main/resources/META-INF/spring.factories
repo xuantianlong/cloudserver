@@ -1,0 +1,19 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.webcommon.abstractfactory.impl.DruidFactory,\
+  com.webcommon.domain.User,\
+  com.webcommon.utils.AjaxResult,\
+  com.webcommon.utils.ResponseUtils,\
+  com.webcommon.utils.HttpStatus,\
+  com.webcommon.utils.SecurityUtrils,\
+  com.webcommon.config.JdbcProperties,\
+  com.webcommon.config.MyBatisPlusConfig,\
+  com.webcommon.config.WebSecurityCorsFilter,\
+  com.webcommon.config.SecurityConfig,\
+  com.webcommon.config.JdbcConfig,\
+  com.webcommon.config.WebConfig,\
+  com.webcommon.config.DruidPropertyConfig,\
+  com.webcommon.service.UserDetailServiceImpl,\
+  com.webcommon.resource_server.ResourceServer\
+
+
+
