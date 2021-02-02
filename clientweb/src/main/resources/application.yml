@@ -1,48 +1,48 @@
 spring:
   main:
     allow-bean-definition-overriding: true #当遇到同样名字的时候，是否允许覆盖注册
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/sys?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2b8&useSSL=false
-    username: root
-    password: 123456
-    type: com.alibaba.druid.pool.DruidDataSource
-    druid:
-      initialSize: 5
-      minIdle: 5
-      maxActive: 20
-      maxWait: 60000
-      timeBetweenEvictionRunsMillis: 60000
-      minEvictableIdleTimeMillis: 300000
-      validationQuery: SELECT 1 FROM DUAL
-      testWhileIdle: true
-      testOnBorrow: false
-      testOnReturn: false
-      poolPreparedStatements: false
-      filters: stat,wall
-      maxPoolPreparedStatementPerConnectionSize: 20
-      useGlobalDataSourceStat: true
-      connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
-mybatis-plus:
-  configuration:
-    map-underscore-to-camel-case: true #开启驼峰命名规则
-    auto-mapping-behavior: full #自动映射实体类属性
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #开启sql控制台打印日志
-  mapper-locations: classpath:mappers/*Mapper.xml #自定义mappper文件所在位置
-  global-config:
-    # 逻辑删除配置
-    db-config:
-      # 删除前
-      logic-not-delete-value: 1
-      # 删除后
-      logic-delete-value: 0
-
-security:
-  oauth2:
-    resource:
-      user-info-uri: http://localhost:8091/user/info
-    client:
-      access-token-uri: http://localhost:8090/oauth/token
-      client-id: client1
-      client-secret: dev
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://127.0.0.1:3306/sys?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2b8&useSSL=false
+#    username: root
+#    password: 123456
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    druid:
+#      initialSize: 5
+#      minIdle: 5
+#      maxActive: 20
+#      maxWait: 60000
+#      timeBetweenEvictionRunsMillis: 60000
+#      minEvictableIdleTimeMillis: 300000
+#      validationQuery: SELECT 1 FROM DUAL
+#      testWhileIdle: true
+#      testOnBorrow: false
+#      testOnReturn: false
+#      poolPreparedStatements: false
+#      filters: stat,wall
+#      maxPoolPreparedStatementPerConnectionSize: 20
+#      useGlobalDataSourceStat: true
+#      connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+#mybatis-plus:
+#  configuration:
+#    map-underscore-to-camel-case: true #开启驼峰命名规则
+#    auto-mapping-behavior: full #自动映射实体类属性
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #开启sql控制台打印日志
+#  mapper-locations: classpath:mappers/*Mapper.xml #自定义mappper文件所在位置
+#  global-config:
+#    # 逻辑删除配置
+#    db-config:
+#      # 删除前
+#      logic-not-delete-value: 1
+#      # 删除后
+#      logic-delete-value: 0
+#
+#security:
+#  oauth2:
+#    resource:
+#      user-info-uri: http://localhost:8091/user/info
+#    client:
+#      access-token-uri: http://localhost:8090/oauth/token
+#      client-id: client1
+#      client-secret: dev
 
