@@ -10,8 +10,8 @@ org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
   com.webcommon.config.WebSecurityCorsFilter,\
   com.webcommon.config.SecurityConfig,\
   com.webcommon.config.JdbcConfig,\
-  com.webcommon.config.WebConfig,\
   com.webcommon.config.DruidPropertyConfig,\
+  com.webcommon.config.FeignTokenInterceptor,\
   com.webcommon.service.UserDetailServiceImpl,\
   com.webcommon.resource_server.ResourceServer\
 
