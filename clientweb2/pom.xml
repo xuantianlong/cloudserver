@@ -78,6 +78,11 @@
 			<artifactId>webcommon</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+			<groupId>com.itheima.cloud</groupId>
+			<artifactId>feginapi</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>

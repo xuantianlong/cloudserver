@@ -1,8 +1,7 @@
 package com.itheima.client.web2.clientweb2.controller;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.itheima.client.web2.clientweb2.fegin.RemoteUserService;
-import com.webcommon.domain.User;
-import com.webcommon.utils.AjaxResult;
+import com.feginapi.domain.User;
+import com.feginapi.service.fegin.RemoteUserService;
+import com.feginapi.utils.AjaxResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

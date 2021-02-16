@@ -112,6 +112,7 @@
       <module>oauth</module>
       <module>clientweb</module>
       <module>common</module>
-     <module> clientweb2</module>
+      <module> clientweb2</module>
+      <module>webapi</module>
   </modules>
 </project>

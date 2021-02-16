@@ -1,19 +1,19 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.webcommon.abstractfactory.impl.DruidFactory,\
-  com.webcommon.domain.User,\
-  com.webcommon.utils.AjaxResult,\
-  com.webcommon.utils.ResponseUtils,\
-  com.webcommon.utils.HttpStatus,\
-  com.webcommon.utils.SecurityUtrils,\
-  com.webcommon.config.JdbcProperties,\
-  com.webcommon.config.MyBatisPlusConfig,\
-  com.webcommon.config.WebSecurityCorsFilter,\
-  com.webcommon.config.SecurityConfig,\
-  com.webcommon.config.JdbcConfig,\
-  com.webcommon.config.DruidPropertyConfig,\
-  com.webcommon.config.FeignTokenInterceptor,\
-  com.webcommon.service.UserDetailServiceImpl,\
-  com.webcommon.resource_server.ResourceServer\
+  com.feginapi.abstractfactory.impl.DruidFactory,\
+  com.feginapi.domain.User,\
+  com.feginapi.utils.AjaxResult,\
+  com.feginapi.utils.ResponseUtils,\
+  com.feginapi.utils.HttpStatus,\
+  com.feginapi.utils.SecurityUtrils,\
+  com.feginapi.config.JdbcProperties,\
+  com.feginapi.config.MyBatisPlusConfig,\
+  com.feginapi.config.WebSecurityCorsFilter,\
+  com.feginapi.config.SecurityConfig,\
+  com.feginapi.config.JdbcConfig,\
+  com.feginapi.config.DruidPropertyConfig,\
+  com.feginapi.config.FeignTokenInterceptor,\
+  com.feginapi.service.UserDetailServiceImpl,\
+  com.feginapi.resource_server.ResourceServer\
 
 
 

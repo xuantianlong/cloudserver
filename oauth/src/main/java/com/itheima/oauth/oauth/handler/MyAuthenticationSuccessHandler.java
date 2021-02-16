@@ -1,9 +1,9 @@
 package com.itheima.oauth.oauth.handler;
 
-import com.webcommon.domain.User;
-import com.webcommon.utils.AjaxResult;
-import com.webcommon.utils.HttpStatus;
-import com.webcommon.utils.ResponseUtils;
+import com.feginapi.domain.User;
+import com.feginapi.utils.AjaxResult;
+import com.feginapi.utils.HttpStatus;
+import com.feginapi.utils.ResponseUtils;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.stereotype.Component;

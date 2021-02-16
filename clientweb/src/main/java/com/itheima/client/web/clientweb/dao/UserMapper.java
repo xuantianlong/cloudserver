@@ -1,7 +1,7 @@
 package com.itheima.client.web.clientweb.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.webcommon.domain.User;
+import com.feginapi.domain.User;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
